@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/tk-learning-center/cling#readme",
   "dependencies": {
-    "inquirer": "^8.0.0"
+    "inquirer": "^8.0.0",
+    "minimist": "^1.2.5"
   },
   "type": "module",
   "devDependencies": {
