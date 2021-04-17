@@ -19,5 +19,8 @@
   "dependencies": {
     "inquirer": "^8.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
 }
