@@ -1,14 +1,12 @@
-import inquirer from 'inquirer';
+import { interactiveList, InquirerType } from './interactiveList.js';
 
-inquirer
-  .prompt([
-    {
-      type: 'list',
-      message: 'Bla:',
-      name: 'thing',
-      choices: ['choice1', 'choice2', 'choice3'],
-    },
-  ])
-  .then(({ thing }) => {
-    console.log(thing);
-  });
+const prompt = {
+  type: InquirerType.list,
+  message: '',
+  name: 'name',
+  choices: ['choice1', 'choice2', 'choice3'],
+};
+
+interactiveList(prompt, ({ [prompt.name]: name }) => {
+  console.log(name);
+});
