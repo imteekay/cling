@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tk-learning-center/cling#readme",
   "dependencies": {
+    "chalk": "^4.1.0",
     "inquirer": "^8.0.0",
     "minimist": "^1.2.5",
     "ora": "^5.4.0"
