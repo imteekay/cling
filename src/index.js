@@ -1,4 +1,5 @@
 import { interactiveList, InquirerType } from './interactiveList.js';
+import { loading } from './loading.js';
 
 const prompt = {
   type: InquirerType.list,
@@ -8,5 +9,5 @@ const prompt = {
 };
 
 interactiveList(prompt, ({ [prompt.name]: name }) => {
-  console.log(name);
+  loading(() => console.log(`Logging: ${name}`));
 });
