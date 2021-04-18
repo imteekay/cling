@@ -1,0 +1,15 @@
+{
+  "env": {
+    "node": true
+  },
+  "root": true,
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "extends": "eslint:recommended",
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
